@@ -327,7 +327,7 @@ def main():
     args_config = arg_parser()
     now_time = datetime.datetime.now()
     time_str = datetime.datetime.strftime(now_time, '%m-%d_%H-%M-%S')
-    log_dir = os.path.join('./logs', time_str)
+    log_dir = os.path.join('/home/kali/Downloads', time_str)
     if not os.path.exists(log_dir):
         os.mkdir(log_dir)
 
